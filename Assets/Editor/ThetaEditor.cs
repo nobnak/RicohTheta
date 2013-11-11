@@ -7,7 +7,7 @@ public static class ThetaEditor {
 	public static void GenerateEquirectangularSphere() {
 		var assetName = "EquirectangularSphere.asset";
 		
-		var mesh = Equirectangular.Create();
+		var mesh = nobnak.Geometry.Equirectangular.Create();
 		AssetDatabase.CreateAsset(mesh, System.IO.Path.Combine("Assets/Generated", assetName));
 	}
 	
